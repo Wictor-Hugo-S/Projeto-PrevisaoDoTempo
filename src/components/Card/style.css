@@ -1,0 +1,176 @@
+.row-card{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 20px;
+   
+    
+}
+.row-card p{
+    color: white;
+    text-transform: capitalize;
+}
+
+.previsoes{
+    border: 1px solid transparent;
+    border: none;
+   max-width: 100px;
+   width: 100%;
+    padding: 0 15px;
+    margin-left: -6.5%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    border-radius: 6px;
+    box-shadow: 5px 30px 40px rgba(15, 15, 15, 0.2);
+   
+   }
+   .nome-previsao h2{
+      color: white;
+      margin-top: 50px;
+      margin-left: -6.5%;
+   }
+   
+   .wrapper{
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       flex-direction: row;
+   
+       
+   }
+   .condition p{
+    color: white;
+    font-size: 0.8em;
+   }
+   .texto-condition{
+       display: flex;
+       gap: 30px;
+       
+   }
+   .texto-condition p{
+       font-size: 0.9em;
+       color: white;
+       white-space: nowrap;
+       
+       
+   }
+   .texto-condition span{
+       white-space: nowrap;
+       font-size: 0.9em;
+   }
+   .texto-condition p:first-child{
+       font-weight: bold;
+   }
+   .expand{
+   
+       transition: all ease-in-out 2s;
+        max-width: 300px;
+        flex-wrap: nowrap;
+        padding-right: 5%;
+       font-weight: 600;
+
+        
+   }
+   .texto-condition2{
+       display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 30px;
+        
+     
+   }
+   .texto-condition2 p{
+   font-size: 0.9rem;
+   font-weight: 600;
+     
+  
+}
+   .texto-chance-chuva{
+       display: flex;
+       gap: 5px;
+       position: relative;
+       top: 3px;
+     
+   }
+   .texto-chance-chuva svg{
+       position: relative;
+       top: 2px;
+   }
+
+   
+  .texto-chance-chuva .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    height: auto;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    padding: 5px ;
+    color: black;
+    position: absolute;
+    z-index: 1;
+    top:-8px;
+    left: 30px;
+    
+  }
+  
+  .texto-chance-chuva .tooltip:hover .tooltiptext {
+    visibility: visible;
+    color:#121212  !important;
+    font-size: 0.5em;
+   font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+   
+  }
+  @media(max-width: 800px){
+      body{
+          overflow: hidden;
+      }
+      .previsoes{
+          margin-left: -8%;
+         
+      }
+      .expand{
+          max-width: 250px;
+      }
+      .texto-condition p{
+        font-size: 0.7em;
+        color: white;
+        white-space: nowrap;
+    }
+    .texto-condition2 p{
+        font-size: 0.6em;
+    }
+  }
+
+@media(max-width: 600px){
+    .row-card{
+   
+    
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+     width: 100%;
+      
+    }
+  
+  
+    .previsoes{
+        margin-left: -4%;
+        max-width: 75px;
+        
+       
+    }
+    .expand{
+        max-width: 250px;
+        flex-wrap: nowrap;
+        padding-right: 8%;
+       font-weight: 600;
+
+    }
+    
+
+  }
+  

@@ -1,0 +1,209 @@
+.modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+/* background-image: linear-gradient(#15365a,#223f5e,#2d445c); */
+    z-index: 999;
+  
+    
+   
+}
+
+
+.modal .container{
+    position: fixed;
+    max-width: 520px;
+    max-height: 120px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    padding: 5em 2rem;
+    box-shadow: 5px 30px 40px rgba(0, 0, 0, 0.8);
+     /* background-image: linear-gradient(to right,#164284,#164284,#40629e );
+     background-image: url('../../assets/chuva.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat; 
+
+    background-image: linear-gradient(to bottom, transparent 5%,#222a33 90%), url('../../assets/chuvanoite.jpg'); */
+    
+     
+}
+
+.close{
+    background-color: #F65835;
+    border: 0;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 4px;
+    border-radius: 5px;
+}
+
+.modal h2{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.modal h1{
+    margin: 0;
+}
+
+.modal span{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #121212;
+  
+}
+
+.modal p{
+    padding-top:0.5em ;
+    white-space: pre-wrap;
+}
+.modal h1{
+  text-align: center;
+margin-top: -72px;
+font-size: 32px;
+text-transform: capitalize;
+font-family: sans-serif;
+
+}
+.modal h5{
+    margin-top: -15px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.clima{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+    margin-left: -7px;
+       
+}
+.clima h2{
+    color: white;
+  font-size: 32px;
+}
+.clima span{
+    margin-left: 30px;
+    color: white;
+    font-size: 1.0rem;
+    white-space: nowrap;
+    margin-left: 8px;
+    font-size: 36px;
+    line-height: 62px;
+    font-family: sans-serif;
+   
+   
+}
+ .clima img{
+    width: 40% !important;
+}
+.clima :last-child{
+    margin-left: 30px;
+    color: white;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    margin-left: 13px;
+
+}
+
+.condicoes-climaticas:not(p){
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-top: -15px;
+}
+
+.condicoes-climaticas p{
+    color: white;
+}
+.temperatura p{
+    color: white;
+    white-space: pre-wrap;
+    margin-top: 5px;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    
+    
+}
+.nome-previsao h2{
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+   
+    width: 200px;
+   height: auto;
+background-color: #e0e0e0;
+    border-radius: 6px;
+    padding: 5px ;
+   
+    color: black;
+    
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 66px;
+    
+   
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    color:#121212  !important;
+    font-size: 0.5em;
+   font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+   
+   
+  }
+
+
+
+
+@media (max-width: 600px){
+    .modal .container{
+        width: 400px;
+        max-height: 150px;
+        margin: 30px auto;
+     
+    }
+    .modal h1{
+        font-size: 25px;
+
+    }
+   
+    .temperatura p{
+       white-space: nowrap;
+       font-size: 13px;
+      
+    
+    }
+
+}
